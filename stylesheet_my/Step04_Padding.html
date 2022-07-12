@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step04_Padding.html</title>
+	<style>
+		#mg1{
+			padding-top: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			/* (참고) 이 순서로 작성하는게 국룰(시계방향) */
+		}
+		#mg2{
+			padding: 10px 10px 10px 10px; /* 국룰에 따라 탑-라이트-봇-레프트 순으로 적어주면 인식함 */
+		}
+		#mg3{
+			padding: 10px;
+		}
+		#mg4{
+			padding-top: 10px;
+			padding-right: 20px;
+			padding-bottom: 30px;
+			padding-left: 40px;
+		}
+		#mg5{
+			padding: 10px 20px 30px 40px;
+		}	
+		#mg6{
+			padding-top: 20px;
+			padding-right: 40px;
+			padding-bottom: 20px;
+			padding-left: 40px;
+		}
+		#mg7{
+			/*padding: 20px 40px 20px 40px;*/
+			padding: 20px 40px; /* 마주보고 있는 값이 같게 설정하려면 탑하고 라이트만 작성해도 알아먹음 */
+		}
+		#mg8{
+			padding: 10px 20px 30px;
+		}
+	</style>
+</head>
+<body>
+<button>버튼</button><br/>
+<button id="mg1">버튼1</button><br/>
+<button id="mg2">버튼2</button><br/>
+<button id="mg3">버튼3</button><br/>
+<button id="mg4">버튼4</button><br/>
+<button id="mg5">버튼5</button><br/>
+<button id="mg6">버튼6</button><br/>
+<button id="mg7">버튼7</button><br/>
+<button id="mg8">버튼8</button><br/>				
+</body>
+</html>

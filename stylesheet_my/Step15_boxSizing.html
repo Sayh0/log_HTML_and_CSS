@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step15_boxSizing.html</title>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			/* 이 100px들에는 패딩과 보더 마진이 포함되어 있는건 아님. */
+			background-color: yellow;
+			border: 10px solid red;
+			padding: 10px;
+			margin: 10px;
+			/* 
+			content-box (default) | border-box 비교.
+			
+			content-box : width 와 height 에 아무것도 포함하지 않음
+			이게 기본값.
+
+			border-box : width 와 height 에 padding 과 border 포함 ******
+			계산이 편해서 패딩과 보더를 포함시켜버린 보더박스를 많이 씀.
+			
+			*/
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+<h1>box-sigzing 속성</h1>
+<div class="box">.box</div>	
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step09_form4.html</title>
+</head>
+<body>
+    <h1>폼 요소에 기본값 저장하기</h1>
+    <p><!--<p>p요소는 주로 문자열 단락(paragraph)을 구성할 때 사용한다.-->
+        서버에서 클라이언트에게 폼을 응답할 때
+        이미 저장된 값을 출력한 채로 응답을 해야 할 때가 있다.
+        예를 들어 회원가입된 정보 보기로 이동한다면
+        DB에 이미 저장된 내용을 출력해 주어야 한다.
+    </p>
+    <form action="update.jsp">
+        이메일 <input type="email" name="email" value="aaa@naver.com">
+        <br>
+        <fieldset>
+            <legend>취미 정보 선택</legend>
+            <label><input type="checkbox" name="hobby" value="soccer">축구</label>
+            <label><input type="checkbox" name="hobby" value="baking" checked>제빵</label>
+            <label><input type="checkbox" name="hobby" value="piano">피아노</label>
+            <label><input type="checkbox" name="hobby" value="etc">기타</label>
+        </fieldset>
+        <label for="job">직업선택</label>
+        <select name="job" id="job">
+            <option value="">선택</option>
+            <option value="programmer">프로그래머</option>
+            <option value="doctor">의사</option>
+            <option value="pianist" selected>피아니스트</option>
+            <option value="etc">기타</option>
+        </select>
+        <br>
+        하고 싶은 말
+        <br>
+        <!-- textArea의 초기값은 textArea의 innerText로 출력을 해 두어야 한다.-->
+        <textarea name="commmnet" id="commmnet">아무거나 입력하세요 하나 두울
+            한낫
+            둘
+            두울
+            <!--tap 까지 표현이 됨-->
+        </textarea>
+        <button type="submit">수정하기</button>
+        <button type="reset">취소</button>
+        <!--reset은 처음 출력 내용으로 되돌아가는것-->
+    </form>
+
+</body>
+</html>
